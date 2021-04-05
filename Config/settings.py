@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
     #local party
     'listings.apps.ListingsConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -114,3 +115,5 @@ try:
     from .local_settings import *
 except ImportError:
     pass
+
+CART_ID = 'cart'
